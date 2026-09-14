@@ -108,7 +108,7 @@
       {id:"maths",name:"Mathematics Standard 2",short:"Maths",accent:"#c9e86b",target:"45-minute block"},
       {id:"drama",name:"Drama",short:"Drama",accent:"#e6847b",target:"One written response"}
     ];
-    function makeTask(id,title,meta,keywords,chain,topic){return {id:id,title:title,meta:meta||"",keywords:keywords||[],chain:chain||0,topic:topic||""}}
+    function makeTask(id,title,meta,keywords,chain,topic){var values=Array.isArray(keywords)?keywords:[keywords],keyList=[title];values.forEach(function(value){var normalized=normalize(value);if(!normalized)return;keyList.push(normalized);var words=normalized.split(" ");if(words.length>=2)keyList.push(words.slice(0,2).join(" "));if(words.length>=3)keyList.push(words.slice(0,3).join(" "))});return {id:id,title:title,meta:meta||"",keywords:keyList,chain:chain||0,topic:topic||""}}
     var ECONOMICS_TOPICS=[
       {name:"Topic 1 — The Global Economy",items:[
         makeTask("economics:io-trading-blocs-forums-fta","IO, Trading Blocs, Forums, FTA","Global economy essay","IO, Trading Blocs, Forums, FTA",0,"Topic 1 — The Global Economy"),
