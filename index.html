@@ -49,6 +49,22 @@
     .bank-card strong{color:var(--ink)}
     .bank-kicker{display:inline-flex;padding:5px 8px;border-radius:999px;background:rgba(201,232,107,.1);color:var(--lime);font-size:10px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
     @media(max-width:900px){.bank-grid{grid-template-columns:1fr}}
+
+    .plan-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:14px;align-items:start}
+    .plan-list{display:grid;gap:8px}
+    .plan-row{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:12px;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:11px;background:var(--panel)}
+    .plan-row.revision{border-color:#3f4f42;background:#121a15}
+    .plan-row.recovery{display:block;color:var(--muted);line-height:1.6}
+    .plan-index{color:var(--lime);font-size:11px;font-weight:850;font-variant-numeric:tabular-nums}
+    .plan-label{font-size:13px;font-weight:800}
+    .plan-time{color:var(--lime);font-size:12px;font-weight:850;white-space:nowrap}
+    .car-card{padding:21px;border:1px solid #44543a;border-radius:var(--radius);background:linear-gradient(145deg,#162014,#111613 70%);box-shadow:var(--shadow)}
+    .car-card .eyebrow{color:var(--lime)}
+    .car-card h3{margin:8px 0 10px;font-size:20px;letter-spacing:-.045em}
+    .car-card p{color:var(--muted);font-size:13px;line-height:1.65;margin:0}
+    .car-meta{margin-top:18px;padding-top:12px;border-top:1px solid #344330;color:#9db27d;font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+    .car-chip{border-color:#526642;background:#1e2a1b;color:#b8d88a}
+    @media(max-width:850px){.plan-layout{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -69,15 +85,15 @@
       <div class="side-bottom"><span class="sync-dot" id="sync-dot"></span><span id="side-sync">Local state ready</span></div>
     </aside>
     <main class="main">
-      <header class="topbar"><div><div class="eyebrow">CONTROL CENTRE · CARPE DIEM</div><h1 class="top-title" id="top-title">Today</h1></div><div class="top-actions"><button class="button small" data-action="sync">Sync state</button><button class="button small ghost" data-action="jump-today">Today</button></div></header>
+      <header class="topbar"><div><div class="eyebrow">CONTROL CENTRE · CARPE DIEM</div><h1 class="top-title" id="top-title">Today</h1></div><div class="top-actions"><a class="button small" href="https://calculator26.github.io/studytrack/" target="_blank" rel="noopener">StudyTrack ↗</a><button class="button small" data-action="sync">Sync state</button><button class="button small ghost" data-action="jump-today">Today</button></div></header>
       <div class="content">
         <section class="view active" id="view-today">
-          <div class="hero"><div><div class="eyebrow" id="today-date-label">TUESDAY 15 SEPTEMBER 2026</div><h2>Win the next block.</h2><p id="today-copy">Your dashboard is built around one useful action in every subject, then a clean hand-off to the next task.</p></div><div class="hero-side"><span class="hero-percent" id="hero-percent">0%</span><small>of the full memorisation plan complete</small></div></div>
+          <div class="hero"><div><div class="eyebrow" id="today-date-label">TUESDAY 15 SEPTEMBER 2026</div><h2>Phase 1: clear the board.</h2><p id="today-copy">Until Friday 25 September, this page is only the sprint: English Module B, all six Topic 1 Economics essays, Business HR, and Maths if capacity remains.</p></div><div class="hero-side"><span class="hero-percent" id="hero-percent">0%</span><small>of the Phase 1 core target complete</small></div></div>
           <div class="phase-strip"><span class="phase-title" id="phase-strip-title">PHASE 1 / FOUNDATION</span><span class="phase-copy" id="phase-strip-copy">Priority stack due Friday 25 September.</span><span class="phase-date" id="phase-strip-date">10 days to checkpoint</span></div>
-          <div class="metrics"><div class="metric"><div class="eyebrow">Plan complete</div><div class="metric-value" id="metric-complete">0 / 0</div><div class="metric-note">individual memorisation tasks</div></div><div class="metric"><div class="eyebrow">Today’s stack</div><div class="metric-value" id="metric-stack">0 / 5</div><div class="metric-note">English · Business · Economics · Maths · Drama</div></div><div class="metric"><div class="eyebrow">Phase 1</div><div class="metric-value" id="metric-phase">0%</div><div class="metric-note">priority target completion</div></div><div class="metric"><div class="eyebrow">Next exam</div><div class="metric-value" id="metric-next-exam">—</div><div class="metric-note" id="metric-next-exam-note">countdown loading</div></div></div>
-          <div class="section"><div class="section-head"><div><div class="eyebrow">DAILY STACK</div><h3>One of each</h3><p>Complete the current item and the queue advances automatically.</p></div><button class="button small" data-view-target="completion">View everything</button></div><div class="stack-grid" id="today-stack"></div></div>
-          <div class="section"><div class="section-head"><div><div class="eyebrow">CHAT / QUICK LOG</div><h3>What happened today?</h3><p>Write the update naturally. The site applies obvious completions and study time immediately.</p></div></div><form class="update-panel" id="quick-form"><div><input class="update-input" id="quick-input" autocomplete="off" placeholder="Try: finished Balance of Payments and did 45 minutes maths"><div class="update-help">Works with phrases such as finished, learned, completed, one of each, 45 minutes Maths, and half of HR Influences.</div></div><button class="button primary" type="submit">Apply update</button></form></div>
-          <div class="section"><div class="section-head"><div><div class="eyebrow">EXAM COUNTDOWNS</div><h3>Every subject has a date</h3><p>Dates are loaded from the official 2026 NSW HSC written timetable.</p></div></div><div class="countdown-grid" id="countdown-grid"></div></div>
+          <div class="metrics"><div class="metric"><div class="eyebrow">Phase 1 core</div><div class="metric-value" id="metric-complete">0 / 0</div><div class="metric-note">Mod B · Topic 1 Economics · Business HR</div></div><div class="metric"><div class="eyebrow">Today’s hours</div><div class="metric-value" id="metric-stack">0 h</div><div class="metric-note" id="metric-hours-note">planned blocks</div></div><div class="metric"><div class="eyebrow">Priority target</div><div class="metric-value" id="metric-phase">0%</div><div class="metric-note">core work only</div></div><div class="metric"><div class="eyebrow">Checkpoint</div><div class="metric-value" id="metric-checkpoint">—</div><div class="metric-note" id="metric-checkpoint-note">to Friday 25 September</div></div></div>
+          <div class="section"><div class="section-head"><div><div class="eyebrow">TODAY’S SPLIT</div><h3 id="phase-plan-heading">Today’s exact allocation</h3><p>Follow the minutes in order. The core target comes before the optional Maths stretch.</p></div><button class="button small" data-view-target="schedule">Open full run-sheet</button></div><div class="plan-layout"><div class="plan-list" id="phase-plan"></div><aside class="car-card"><div class="eyebrow">CAR RECALL</div><h3 id="car-reminder-title">Short recall counts.</h3><p id="car-reminder-text">Use ten minutes in the car for audio or oral recall only.</p><div class="car-meta" id="car-reminder-meta">10 minutes · no writing required</div></aside></div></div>
+          <div class="section"><div class="section-head"><div><div class="eyebrow">PHASE 1 DAILY STACK</div><h3>One of each</h3><p>Complete the current item and the queue advances automatically.</p></div><button class="button small" data-view-target="completion">View everything</button></div><div class="stack-grid" id="today-stack"></div></div>
+          <div class="section"><div class="section-head"><div><div class="eyebrow">CHAT / QUICK LOG</div><h3>What happened today?</h3><p>Write the update naturally. The site applies obvious completions and study time immediately.</p></div></div><form class="update-panel" id="quick-form"><div><input class="update-input" id="quick-input" autocomplete="off" placeholder="Try: finished Balance of Payments and did 45 minutes maths"><div class="update-help">Use StudyTrack for the clock, then paste the same minutes here if you want them reflected in this command centre.</div></div><button class="button primary" type="submit">Apply update</button></form></div>
           <div class="section"><div class="section-head"><div><div class="eyebrow">LATEST MOVEMENT</div><h3>Recent updates</h3></div><button class="button small ghost" data-view-target="updates">Open feed</button></div><div class="recent-list" id="recent-list"></div></div>
         </section>
 
@@ -110,8 +126,9 @@
         </section>
 
         <section class="view" id="view-schedule">
-          <div class="page-head"><div><div class="eyebrow">LOCK-IN CALENDAR</div><h2>The hours have a job.</h2><p>Your supplied study-hour plan, converted into a visible run-up to the Friday checkpoint.</p></div></div>
-          <div class="schedule-layout"><div><div class="section-head" style="margin-top:0"><div><div class="eyebrow">PHASE 1 HOURS</div><h3>Foundation sprint</h3></div></div><div class="schedule-list" id="schedule-list"></div></div><div><div class="rule-card"><div class="eyebrow">Hours supplied</div><h3 id="schedule-total">0 hours</h3><p>These hours are the container. The dashboard decides the next useful task inside each block.</p></div><div class="rule-card" style="margin-top:12px"><div class="eyebrow">Allocation rules</div><h3>Keep the stack honest.</h3><ul class="bullet-list"><li>English moves one introduction or paragraph at a time.</li><li>Economics moves one essay at a time, with spaced review.</li><li>Maths remains a daily 45-minute block where possible.</li><li>Drama stays alive without stealing the whole day.</li></ul></div></div></div>
+          <div class="page-head"><div><div class="eyebrow">LOCK-IN CALENDAR</div><h2>The hours have a job.</h2><p>Your supplied hours, converted into an exact daily split through the Friday checkpoint. Track the clock in StudyTrack; use this page for the work order.</p></div></div>
+          <div class="schedule-layout"><div><div class="section-head" style="margin-top:0"><div><div class="eyebrow">PHASE 1 RUN-SHEET</div><h3>Foundation sprint</h3></div></div><div class="schedule-list" id="schedule-list"></div></div><div><div class="rule-card"><div class="eyebrow">Hours supplied</div><h3 id="schedule-total">0 hours</h3><p>Every hour has a named job. BOP and Common Module return as spaced revision, and car recall stays low-pressure.</p></div><div class="rule-card" style="margin-top:12px"><div class="eyebrow">Allocation rules</div><h3>Keep the stack honest.</h3><ul class="bullet-list"><li>English moves one Module B poem, introduction or conclusion at a time.</li><li>Economics moves one Topic 1 essay at a time, with BOP review scheduled between blocks.</li><li>Business HR runs Role → Influences → Processes → Strategies.</li><li>Maths is the optional stretch: targeted practice toward roughly 25%.</li><li>Listen to BOP/Common Module recall in the car when the day assigns it.</li></ul></div></div></div>
+          <div class="section"><div class="section-head"><div><div class="eyebrow">EXAM COUNTDOWNS</div><h3>Every subject has a date</h3><p>Dates are loaded from the official 2026 NSW HSC written timetable.</p></div></div><div class="countdown-grid" id="countdown-grid"></div></div>
         </section>
 
         <section class="view" id="view-updates">
@@ -222,18 +239,74 @@
       {id:"business",subject:"Business Studies",paper:"Written examination",date:"2026-10-26",time:"9:25 am",at:"2026-10-26T09:25:00+11:00"},
       {id:"economics",subject:"Economics",paper:"Written examination",date:"2026-10-27",time:"1:55 pm",at:"2026-10-27T13:55:00+11:00"}
     ];
-    var STUDY_SCHEDULE=[
-      {date:"2026-09-15",hours:3,focus:["English Module B","Economics Topic 1","Business HR"]},
-      {date:"2026-09-16",hours:4.5,focus:["English Module B","Business HR","Economics Topic 1"]},
-      {date:"2026-09-17",hours:0,focus:["Recovery / no study block"]},
-      {date:"2026-09-18",hours:5,focus:["English Module B","Economics Topic 1","Maths optional"]},
-      {date:"2026-09-19",hours:10,focus:["English Module B","Business HR","Economics Topic 1","Maths optional"]},
-      {date:"2026-09-20",hours:10,focus:["English Module B","Business HR","Economics Topic 1","Spaced revision"]},
-      {date:"2026-09-21",hours:0,focus:["Recovery / no study block"]},
-      {date:"2026-09-22",hours:8,focus:["English Module B","Business HR","Economics Topic 1","Maths optional"]},
-      {date:"2026-09-23",hours:8,focus:["English Module B","Business HR","Economics Topic 1","Spaced revision"]},
-      {date:"2026-09-24",hours:8,focus:["English Module B","Business HR","Economics Topic 1","Maths optional"]},
-      {date:"2026-09-25",hours:10,focus:["Checkpoint review","Finish Phase 1 targets","Reassess Phase 2"]}
+    var PHASE_PLAN=[
+      {date:"2026-09-15",hours:3,allocations:[
+        {label:"English Mod B · master introduction",minutes:90},
+        {label:"Economics Topic 1 · IO, Trading Blocs, Forums, FTA",minutes:60},
+        {label:"Business HR · begin Influences",minutes:30}
+      ],car:"10 min car recall: listen to the BOP explainer."},
+      {date:"2026-09-16",hours:4.5,allocations:[
+        {label:"English Mod B · Prufrock",minutes:120},
+        {label:"Economics Topic 1 · Effects of Globalisation",minutes:90},
+        {label:"Business HR · Influences",minutes:60}
+      ],car:"10 min car recall: Common Module oral recall."},
+      {date:"2026-09-17",hours:0,allocations:[],car:"Recovery day. If travelling, listen to the Common Module audio only — no study block."},
+      {date:"2026-09-18",hours:5,allocations:[
+        {label:"English Mod B · Rhapsody on a Windy Night",minutes:120},
+        {label:"Economics Topic 1 · Global FTP > Global",minutes:120},
+        {label:"Business HR · Influences recall",minutes:30},
+        {label:"BOP revision",minutes:15},
+        {label:"Common Module revision",minutes:15}
+      ],car:"10 min car recall: listen to BOP + Common Module audio."},
+      {date:"2026-09-19",hours:10,allocations:[
+        {label:"English Mod B · Preludes",minutes:120},
+        {label:"Economics Topic 1 · Global DYW",minutes:150},
+        {label:"Business HR · Processes",minutes:120},
+        {label:"Maths optional targeted block",minutes:120},
+        {label:"BOP revision",minutes:45},
+        {label:"Common Module revision",minutes:45}
+      ],car:"10 min car recall: listen to the weakest Economics essay."},
+      {date:"2026-09-20",hours:10,allocations:[
+        {label:"English Mod B · The Hollow Men",minutes:120},
+        {label:"Economics Topic 1 · Globalisation > Australia",minutes:150},
+        {label:"Business HR · Strategies",minutes:120},
+        {label:"Maths optional targeted block",minutes:120},
+        {label:"BOP revision",minutes:45},
+        {label:"Common Module revision",minutes:45}
+      ],car:"10 min car recall: Common Module oral recall."},
+      {date:"2026-09-21",hours:0,allocations:[],car:"Recovery day. If travelling, listen to the BOP audio only — no study block."},
+      {date:"2026-09-22",hours:8,allocations:[
+        {label:"English Mod B · Journey of the Magi",minutes:120},
+        {label:"Economics Topic 1 · TopTY China Case Study",minutes:150},
+        {label:"Business HR · full recall",minutes:60},
+        {label:"Maths optional targeted block",minutes:90},
+        {label:"BOP revision",minutes:30},
+        {label:"Common Module revision",minutes:30}
+      ],car:"10 min car recall: listen to the BOP explainer."},
+      {date:"2026-09-23",hours:8,allocations:[
+        {label:"English Mod B · conclusion + all-poem quote recall",minutes:90},
+        {label:"Economics Topic 1 · full recall / weak essay repair",minutes:150},
+        {label:"Business HR · full essay recall",minutes:90},
+        {label:"Maths optional targeted block",minutes:90},
+        {label:"BOP revision",minutes:30},
+        {label:"Common Module revision",minutes:30}
+      ],car:"10 min car recall: Common Module audio."},
+      {date:"2026-09-24",hours:8,allocations:[
+        {label:"English Mod B · full chain / weakest poem",minutes:90},
+        {label:"Economics Topic 1 · timed plans + essay recall",minutes:180},
+        {label:"Business HR · evaluation drills",minutes:90},
+        {label:"Maths optional targeted block",minutes:90},
+        {label:"BOP revision",minutes:15},
+        {label:"Common Module revision",minutes:15}
+      ],car:"10 min car recall: BOP + Common Module."},
+      {date:"2026-09-25",hours:10,allocations:[
+        {label:"English Mod B · final full recall + timed plan",minutes:120},
+        {label:"Economics Topic 1 · final six-essay recall",minutes:180},
+        {label:"Business HR · final recall + evaluation",minutes:120},
+        {label:"Maths optional targeted block",minutes:90},
+        {label:"BOP revision",minutes:45},
+        {label:"Common Module revision",minutes:45}
+      ],car:"Final 10 min car recall: BOP + Common Module."}
     ];
     var seed={version:1,revision:1,workDate:CURRENT_DATE,completed:{"english:common-intro":"2026-09-08","english:common-bp1":"2026-09-09","english:common-bp2":"2026-09-12","business:hr-role":"2026-09-12","economics:balance-of-payments":"2026-09-12"},chains:{},partial:{},minutesByDate:{},updateLog:[
       {at:"2026-09-12T09:00:00+10:00",text:"Common Module introduction, BP1 and BP2 recorded as completed.",source:"seed"},
@@ -273,9 +346,17 @@
     function renderAll(){renderToday();renderCountdowns();renderCompletion();renderSubjects();renderSchedule();renderPhases();renderUpdates();renderNavigation();renderViewState()}
     function renderViewState(){document.querySelectorAll(".view").forEach(function(view){view.classList.toggle("active",view.id==="view-"+activeView)});document.querySelectorAll(".nav-button").forEach(function(button){button.classList.toggle("active",button.getAttribute("data-view")===activeView)});var names={today:"Today",phases:"Phases",completion:"Total completion",subjects:"Subjects","study-bank":"Study bank",schedule:"Schedule",updates:"Updates"};document.getElementById("top-title").textContent=names[activeView]||"Today"}
     function renderNavigation(){var all=allTasks(),done=completeCount(all);document.getElementById("nav-today").textContent=state.workDate===CURRENT_DATE?"now":formatShortDate(state.workDate);document.getElementById("nav-completion").textContent=done+"/"+all.length;document.getElementById("nav-updates").textContent=String(state.updateLog.length);document.getElementById("side-sync").textContent=lastRemoteSync?"Synced "+lastRemoteSync.toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}):"Local state ready"}
+function phasePlanForDate(date){return PHASE_PLAN.find(function(day){return day.date===date})||PHASE_PLAN.find(function(day){return day.date===CURRENT_DATE})||PHASE_PLAN[PHASE_PLAN.length-1]}
+    function formatStudyMinutes(minutes){var value=Number(minutes||0);if(value%60===0)return value/60+"h";return Math.floor(value/60)+"h "+value%60+"m"}
     function renderToday(){
-      var all=allTasks(),done=completeCount(all),phase=phaseOneStats(),current=currentPhase(),stackDone=0;
-      document.getElementById("hero-percent").textContent=pct(done,all.length)+"%";document.getElementById("today-date-label").textContent=formatDate(state.workDate,{weekday:"long"}).toUpperCase();document.getElementById("metric-complete").textContent=done+" / "+all.length;document.getElementById("metric-phase").textContent=phase.percent+"%";
+      var all=allTasks(),phase=phaseOneStats(),current=currentPhase(),day=phasePlanForDate(state.workDate),stackDone=0;
+      document.getElementById("hero-percent").textContent=phase.percent+"%";document.getElementById("today-date-label").textContent=formatDate(state.workDate,{weekday:"long"}).toUpperCase();document.getElementById("metric-complete").textContent=phase.done+" / "+phase.total;document.getElementById("metric-stack").textContent=day.hours+" h";document.getElementById("metric-hours-note").textContent=day.allocations.length?day.allocations.length+" planned blocks":"recovery day";document.getElementById("metric-phase").textContent=phase.percent+"%";
+      var checkpoint=daysUntil("2026-09-25");document.getElementById("metric-checkpoint").textContent=checkpoint?checkpoint+"d":"TODAY";document.getElementById("metric-checkpoint-note").textContent=checkpoint?"to Friday checkpoint":"reassess Phase 2";
+      document.getElementById("phase-plan-heading").textContent=(day.date===CURRENT_DATE?"Today":"Run-sheet")+" · "+formatDate(day.date,{weekday:"long"})+" · "+day.hours+" hour"+(day.hours===1?"":"s");
+      document.getElementById("phase-plan").innerHTML=day.allocations.length?day.allocations.map(function(item,index){var rowClass=/revision/i.test(item.label)?" revision":"";return '<div class="plan-row'+rowClass+'"><span class="plan-index">'+("0"+(index+1)).slice(-2)+'</span><span class="plan-label">'+esc(item.label)+'</span><span class="plan-time">'+formatStudyMinutes(item.minutes)+'</span></div>'}).join(""):'<div class="empty plan-row recovery">No study block planned. Keep the day clear, and use the car only for low-pressure recall if you are travelling.</div>';
+      document.getElementById("car-reminder-title").textContent=day.date===CURRENT_DATE?"Use the car as recall time.":"Car recall";
+      document.getElementById("car-reminder-text").textContent=day.car;
+      document.getElementById("car-reminder-meta").textContent=day.car.indexOf("no study")>=0?"audio only · no writing required":"10 minutes · audio / oral recall only";
       var cards=SUBJECTS.map(function(subject){
         var doneNow=false,task=null,title="",meta="";
         if(subject.id==="maths"){var minutes=Number(state.minutesByDate[state.workDate]||0);doneNow=minutes>=45;if(doneNow)stackDone++;title="45-minute Maths block";meta=minutes+" / 45 minutes logged"}
@@ -283,12 +364,11 @@
         var action=subject.id==="maths"?'<button class="mini-check" data-action="log-maths">'+(doneNow?"Add another block":"Log 45 minutes")+"</button>":(task?'<button class="mini-check" data-action="complete-task" data-id="'+esc(task.id)+'">'+(isDone(task.id)?"Completed":"Mark complete")+"</button>":'<button class="mini-check" data-action="open-subject" data-subject="'+subject.id+'">Review subject</button>');
         return '<article class="stack-card '+(doneNow?"done":"")+'" style="--accent:'+subject.accent+'"><div class="stack-top"><span class="stack-name">'+esc(subject.short)+'</span><span class="stack-status">'+(doneNow?"Done":"Next")+'</span></div><div class="stack-task">'+esc(title)+'</div><div class="stack-meta">'+esc(meta)+'</div><div class="stack-actions">'+action+'<button class="button small ghost" data-action="open-subject" data-subject="'+subject.id+'">Open</button></div></article>'
       }).join("");
-      document.getElementById("today-stack").innerHTML=cards;document.getElementById("metric-stack").textContent=stackDone+" / 5";
-      var next=EXAMS.find(function(exam){return new Date(exam.at)>new Date()});if(next){var cd=examCountdown(next);document.getElementById("metric-next-exam").textContent=cd.days+"d";document.getElementById("metric-next-exam-note").textContent=next.subject+" · "+formatShortDate(next.date)}
+      document.getElementById("today-stack").innerHTML=cards;
       document.getElementById("phase-strip-title").textContent=current===1?"PHASE 1 / FOUNDATION":"PHASE 2 / FULL LOCK-IN";document.getElementById("phase-strip-copy").textContent=current===1?"Priority stack due Friday 25 September.":"Full no-interruption memorisation and perfection phase.";document.getElementById("phase-strip-date").textContent=current===1?daysUntil("2026-09-25")+" days to checkpoint":"Reassess daily";
       document.getElementById("recent-list").innerHTML=state.updateLog.length?state.updateLog.slice(0,4).map(recentItem).join(""):'<div class="empty">No updates yet.</div>'
     }
-    function recentItem(item){return '<div class="recent-item"><div class="recent-time">'+esc(new Date(item.at).toLocaleDateString("en-AU",{day:"numeric",month:"short"}))+'</div><div class="recent-text">'+esc(item.text)+'</div><div class="recent-source">'+esc(item.source||"device")+"</div></div>"}
+        function recentItem(item){return '<div class="recent-item"><div class="recent-time">'+esc(new Date(item.at).toLocaleDateString("en-AU",{day:"numeric",month:"short"}))+'</div><div class="recent-text">'+esc(item.text)+'</div><div class="recent-source">'+esc(item.source||"device")+"</div></div>"}
     function renderCountdowns(){document.getElementById("countdown-grid").innerHTML=EXAMS.map(function(exam){var cd=examCountdown(exam);return '<div class="countdown-card '+(cd.past?"past":"")+'"><div class="exam-subject">'+esc(exam.subject)+'</div><div class="exam-paper">'+esc(exam.paper)+'</div><div class="countdown-days">'+(cd.past?"DONE":cd.days+"d")+'</div><div class="countdown-date">'+esc(formatDate(exam.date,{weekday:"short"}))+'</div><div class="countdown-time">'+esc(exam.time)+" reading time</div></div>"}).join("")}
     function progressFill(value,accent){return '<div class="progress-track"><div class="progress-fill" style="width:'+value+"%;--accent:"+accent+'"></div></div>'}
     function renderCompletion(){
@@ -300,8 +380,17 @@
       document.getElementById("subject-tabs").innerHTML=SUBJECTS.map(function(subject){return '<button class="subject-tab '+(selectedSubject===subject.id?"active":"")+'" style="--accent:'+subject.accent+'" data-action="select-subject" data-subject="'+subject.id+'">'+esc(subject.name)+"</button>"}).join("");
       var subject=SUBJECTS.find(function(item){return item.id===selectedSubject})||SUBJECTS[0],stats=subjectStats(subject.id),body="",currentTopic="";TASKS[subject.id].forEach(function(task){if(task.topic&&task.topic!==currentTopic&&subject.id==="economics"){currentTopic=task.topic;body+='<div class="topic-label">'+esc(currentTopic)+"</div>"}body+='<div class="subject-task '+(isDone(task.id)?"is-done":"")+'"><button class="check" data-action="complete-task" data-id="'+esc(task.id)+'">'+(isDone(task.id)?"✓":"")+'</button><div class="task-copy"><div class="task-title">'+esc(task.title)+'</div><div class="task-meta">'+esc(task.meta)+'</div></div><button class="button small" data-action="'+(task.chain?"advance-chain":"complete-task")+'" data-id="'+esc(task.id)+'">'+(isDone(task.id)?"Undo":(task.chain?"Chain step":"Complete"))+"</button></div>"});document.getElementById("subject-detail").innerHTML='<div class="subject-panel" style="--accent:'+subject.accent+'"><div class="subject-panel-head"><div><div class="eyebrow">'+esc(subject.short)+' WORKBENCH</div><h3>'+esc(subject.name)+'</h3><p>'+esc(subject.target)+' · current queue advances after each completion.</p></div><div class="subject-panel-stat"><strong>'+stats.percent+'%</strong><span>'+stats.done+" / "+stats.total+' complete</span></div></div>'+progressFill(stats.percent,subject.accent)+'<div class="subject-task-list" style="margin-top:16px">'+body+"</div></div>"
     }
-    function renderSchedule(){var total=STUDY_SCHEDULE.reduce(function(sum,day){return sum+day.hours},0);document.getElementById("schedule-total").textContent=total+" hours";document.getElementById("schedule-list").innerHTML=STUDY_SCHEDULE.map(function(day){var stateClass=day.date===state.workDate?"current":(day.date<state.workDate?"past":"");return '<div class="schedule-day '+stateClass+'"><div><div class="schedule-date">'+esc(formatShortDate(day.date))+'</div><div class="schedule-weekday">'+esc(new Intl.DateTimeFormat("en-AU",{weekday:"long"}).format(new Date(day.date+"T12:00:00")))+'</div></div><div class="schedule-hours">'+day.hours+'<small> h</small></div><div class="schedule-focus">'+day.focus.map(function(item){return '<span class="focus-chip">'+esc(item)+"</span>"}).join("")+"</div></div>"}).join("")}
-    function renderPhases(){var phase=phaseOneStats(),all=allTasks(),done=completeCount(all),maths=subjectStats("maths"),html="";
+function renderSchedule(){
+      var total=PHASE_PLAN.reduce(function(sum,day){return sum+day.hours},0);
+      document.getElementById("schedule-total").textContent=total+" hours";
+      document.getElementById("schedule-list").innerHTML=PHASE_PLAN.map(function(day){
+        var stateClass=day.date===state.workDate?"current":(day.date<state.workDate?"past":"");
+        var chips=day.allocations.map(function(item){return '<span class="focus-chip">'+esc(item.label)+" · "+formatStudyMinutes(item.minutes)+"</span>"}).join("");
+        chips+='<span class="focus-chip car-chip">Car · '+esc(day.car)+'</span>';
+        return '<div class="schedule-day '+stateClass+'"><div><div class="schedule-date">'+esc(formatShortDate(day.date))+'</div><div class="schedule-weekday">'+esc(new Intl.DateTimeFormat("en-AU",{weekday:"long"}).format(new Date(day.date+"T12:00:00")))+'</div></div><div class="schedule-hours">'+day.hours+'<small> h</small></div><div class="schedule-focus">'+chips+"</div></div>"
+      }).join("")
+    }
+        function renderPhases(){var phase=phaseOneStats(),all=allTasks(),done=completeCount(all),maths=subjectStats("maths"),html="";
       html+='<div class="phase-card"><div class="eyebrow">PHASE 1 · 15–25 SEPTEMBER</div><h3>Foundation sprint</h3><p>Clear the priority work by Friday 25 September. The core target is English Module B, all Topic 1 Economics essays and Business Human Resources. Maths is an optional 25% stretch target.</p><div class="phase-progress"><div class="phase-progress-line"><span>Core target progress</span><strong>'+phase.done+' / '+phase.total+' tasks · '+phase.percent+'%</strong></div>'+progressFill(phase.percent,"#c9e86b")+'</div></div>';
       html+='<div class="phase-card"><div class="eyebrow">PHASE 2 · AFTER THE CHECKPOINT</div><h3>Full no-interruption lock-in</h3><p>Reassess what is secure, then build the daily plan through the remaining days before the first English paper. Every remaining task becomes part of the memorisation, spaced repetition, essay perfection and timed-practice cycle.</p><div class="phase-progress"><div class="phase-progress-line"><span>Remaining full plan</span><strong>'+(all.length-done)+' tasks left</strong></div>'+progressFill(pct(all.length-done,all.length),"#8ed3b6")+'</div></div>';
       html+='<div class="phase-card"><div class="eyebrow">OPTIONAL STRETCH</div><h3>Maths: reach roughly 25%.</h3><p>Use the spare capacity for about 2–3 of the 10 chapters. It stays optional until the Phase 1 core is secure.</p><div class="phase-progress"><div class="phase-progress-line"><span>Maths completion</span><strong>'+maths.done+' / '+maths.total+' chapters · '+maths.percent+'%</strong></div>'+progressFill(maths.percent,"#c9e86b")+'</div></div>';
