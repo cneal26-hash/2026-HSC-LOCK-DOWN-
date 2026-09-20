@@ -1,20 +1,57 @@
 {
   "version": 1,
-  "revision": 1,
-  "workDate": "2026-09-15",
+  "revision": 2,
+  "workDate": "2026-09-21",
   "completed": {
     "english:common-intro": "2026-09-08",
     "english:common-bp1": "2026-09-09",
     "english:common-bp2": "2026-09-12",
     "business:hr-role": "2026-09-12",
-    "economics:balance-of-payments": "2026-09-12"
+    "economics:balance-of-payments": "2026-09-12",
+    "english:common-bp3": "2026-09-14",
+    "english:modb-intro": "2026-09-20",
+    "english:modb-prufrock": "2026-09-20",
+    "business:hr-influences": "2026-09-20"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "updateLog": [
-    {"at":"2026-09-12T09:00:00+10:00","text":"Common Module introduction, BP1 and BP2 recorded as completed.","source":"seed"},
-    {"at":"2026-09-12T09:05:00+10:00","text":"Business Human Resources Role recorded as completed.","source":"seed"},
-    {"at":"2026-09-12T09:10:00+10:00","text":"Economics Balance of Payments recorded as completed.","source":"seed"}
-  ]
+    {
+      "at": "2026-09-20T13:59:31.468Z",
+      "text": "Completed Human Resources — Influences.",
+      "source": "device"
+    },
+    {
+      "at": "2026-09-20T13:59:27.114Z",
+      "text": "Completed The Love Song of J. Alfred Prufrock.",
+      "source": "device"
+    },
+    {
+      "at": "2026-09-20T13:59:26.650Z",
+      "text": "Completed Module B — Introduction.",
+      "source": "device"
+    },
+    {
+      "at": "2026-09-14T16:26:30.477Z",
+      "text": "Completed Common Module — BP3.",
+      "source": "device"
+    },
+    {
+      "at": "2026-09-12T09:10:00+10:00",
+      "text": "Economics Balance of Payments recorded as completed.",
+      "source": "seed"
+    },
+    {
+      "at": "2026-09-12T09:05:00+10:00",
+      "text": "Business Human Resources Role recorded as completed.",
+      "source": "seed"
+    },
+    {
+      "at": "2026-09-12T09:00:00+10:00",
+      "text": "Common Module introduction, BP1 and BP2 recorded as completed.",
+      "source": "seed"
+    }
+  ],
+  "remoteRevision": 2
 }
