@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 3,
+  "revision": 4,
   "workDate": "2026-09-21",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -11,13 +11,17 @@
     "english:common-bp3": "2026-09-14",
     "english:modb-intro": "2026-09-20",
     "english:modb-prufrock": "2026-09-20",
-    "business:hr-influences": "2026-09-20",
-    "english:modb-rhapsody": "2026-09-20"
+    "business:hr-influences": "2026-09-20"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "updateLog": [
+    {
+      "at": "2026-09-20T14:44:33.825Z",
+      "text": "Reopened Rhapsody on a Windy Night.",
+      "source": "device"
+    },
     {
       "at": "2026-09-20T14:44:29.862Z",
       "text": "Completed Rhapsody on a Windy Night.",
@@ -69,5 +73,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 3
+  "remoteRevision": 4
 }
