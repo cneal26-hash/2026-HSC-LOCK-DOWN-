@@ -37,6 +37,7 @@
     .phase-card,.rule-card{padding:19px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}.phase-card h3,.rule-card h3{margin:5px 0 8px;font-size:17px;letter-spacing:-.04em}.phase-card p,.rule-card p{font-size:12px;color:var(--muted);margin:0;line-height:1.6}.phase-card+.phase-card{margin-top:10px}.phase-progress{margin-top:17px}.phase-progress-line{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-bottom:7px}.bullet-list{display:grid;gap:8px;margin:13px 0 0;padding:0;list-style:none}.bullet-list li{font-size:12px;color:var(--muted);padding-left:15px;position:relative}.bullet-list li:before{content:"";position:absolute;left:0;top:.55em;width:5px;height:5px;border-radius:50%;background:var(--lime)}
     .subject-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:15px}.subject-tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:9px;padding:9px 12px;font-size:11px;font-weight:800}.subject-tab:hover{border-color:var(--line-strong);color:var(--text)}.subject-tab.active{border-color:var(--accent,var(--lime));color:var(--text);background:var(--panel-2)}.subject-panel{padding:20px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);margin-bottom:14px}.subject-panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:18px}.subject-panel h3{font-size:23px;letter-spacing:-.055em;margin:5px 0 0}.subject-panel p{color:var(--muted);font-size:12px;margin:7px 0 0}.subject-panel-stat{text-align:right}.subject-panel-stat strong{display:block;font-size:29px;letter-spacing:-.07em;color:var(--lime)}.subject-panel-stat span{font-size:10px;color:var(--muted)}.subject-task-list{display:grid;gap:7px}.subject-task{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--line);border-radius:10px;background:#0e1310}.subject-task .task-copy{min-width:0;flex:1}.subject-task .button{white-space:nowrap}
     .update-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:14px;align-items:start}.feed{display:grid;gap:8px}.feed-item{padding:15px 17px;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--panel)}.feed-top{display:flex;justify-content:space-between;gap:12px;color:var(--quiet);font-size:10px}.feed-item p{font-size:13px;margin:9px 0 0;color:var(--text)}.feed-item small{display:block;color:var(--muted);font-size:10px;margin-top:8px}.code-block{font-family:"SFMono-Regular",Consolas,monospace;color:var(--muted);font-size:11px;line-height:1.7;padding:13px;border-radius:9px;background:#0b0f0c;border:1px solid var(--line);margin-top:12px}.toast{position:fixed;right:24px;bottom:24px;z-index:20;max-width:360px;padding:12px 15px;border-radius:10px;color:#152014;background:var(--lime);font-size:12px;font-weight:800;box-shadow:var(--shadow);opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .18s,transform .18s}.toast.show{opacity:1;transform:none}.empty{padding:30px;text-align:center;color:var(--muted);font-size:13px;border:1px dashed var(--line-strong);border-radius:var(--radius-sm)}
+    .sync-modal[hidden]{display:none}.sync-modal{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:20px;background:rgba(4,7,5,.82);backdrop-filter:blur(8px)}.sync-dialog{width:min(520px,100%);padding:25px;border:1px solid var(--line-strong);border-radius:18px;background:var(--panel);box-shadow:0 30px 80px rgba(0,0,0,.55)}.sync-dialog h2{margin:7px 0 8px;font-size:25px;letter-spacing:-.05em}.sync-dialog p{margin:0 0 16px;color:var(--muted);font-size:12px;line-height:1.6}.sync-field{display:grid;gap:6px;margin-top:13px}.sync-field label{font-size:10px;color:var(--quiet);font-weight:800;text-transform:uppercase;letter-spacing:.1em}.sync-field input{width:100%;border:1px solid var(--line-strong);border-radius:9px;background:#0d120f;color:var(--text);padding:11px 12px;font-size:12px}.sync-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:19px}.sync-security{padding:11px 12px;border:1px solid #3b493e;border-radius:9px;background:#111a13;color:var(--muted);font-size:10px;line-height:1.55;margin-top:15px}
     @media(max-width:1250px){.stack-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.countdown-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
     @media(max-width:850px){.app{display:block}.sidebar{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:13px 14px}.brand{padding:0 5px 12px}.side-rule,.side-bottom,.nav-label{display:none}.nav{display:flex;overflow:auto;gap:5px}.nav-button{width:auto;white-space:nowrap;padding:8px 10px}.nav-number,.nav-count{display:none}.topbar{height:68px;padding:0 18px}.content{padding:22px 18px 55px}.hero{display:block;padding:24px;min-height:0}.hero h2{font-size:35px}.hero-side{text-align:left;margin-top:25px}.hero-percent{font-size:49px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.update-panel,.schedule-layout,.update-layout{grid-template-columns:1fr}.phase-strip{align-items:flex-start;flex-wrap:wrap}.phase-date{margin-left:0}}
     @media(max-width:560px){.page-head{display:block}.page-head .button{margin-top:15px}.stack-grid,.countdown-grid,.summary-grid{grid-template-columns:1fr}.task-row{grid-template-columns:28px minmax(0,1fr)}.task-state{grid-column:2}.schedule-day{grid-template-columns:80px 60px minmax(0,1fr);gap:10px;padding:13px}.schedule-hours{font-size:19px}.recent-item{display:block}.recent-source{display:block;margin:7px 0 0}.subject-panel-head{display:block}.subject-panel-stat{text-align:left;margin-top:12px}}
@@ -139,10 +140,20 @@
     </main>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="sync-modal" id="sync-modal" hidden>
+    <div class="sync-dialog" role="dialog" aria-modal="true" aria-labelledby="sync-title">
+      <div class="eyebrow">ONE-TIME SETUP</div>
+      <h2 id="sync-title">Connect live progress</h2>
+      <p>Paste a fine-grained GitHub token with Contents read/write access to this repository. It stays only in this browser and is never saved in the website files.</p>
+      <div class="sync-field"><label for="sync-token">GitHub token</label><input id="sync-token" type="password" autocomplete="off" placeholder="github_pat_…"></div>
+      <div class="sync-security">Repository: cneal26-hash/2026-HSC-LOCK-DOWN- · File: data/state.json · Your current progress on this device will become the cloud version.</div>
+      <div class="sync-actions"><button class="button ghost" type="button" data-action="close-sync">Cancel</button><button class="button primary" type="button" data-action="connect-sync">Connect &amp; upload</button></div>
+    </div>
+  </div>
   <script>
   (function(){
     "use strict";
-    var todayParts=new Intl.DateTimeFormat("en-AU",{timeZone:"Australia/Sydney",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date()),todayPartsMap={};todayParts.forEach(function(part){todayPartsMap[part.type]=part.value});var REMOTE_STATE_URL="data/state.json",LOCAL_KEY="hsc-lock-in-command-centre-v1",CURRENT_DATE=todayPartsMap.year+"-"+todayPartsMap.month+"-"+todayPartsMap.day,selectedSubject="english",activeView="today",toastTimer=null,lastRemoteSync=null;
+    var todayParts=new Intl.DateTimeFormat("en-AU",{timeZone:"Australia/Sydney",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date()),todayPartsMap={};todayParts.forEach(function(part){todayPartsMap[part.type]=part.value});var LOCAL_KEY="hsc-lock-in-command-centre-v1",TOKEN_KEY="hsc-lock-in-github-token-v1",GITHUB_OWNER="cneal26-hash",GITHUB_REPO="2026-HSC-LOCK-DOWN-",GITHUB_BRANCH="main",GITHUB_STATE_PATH="data/state.json",GITHUB_API="https://api.github.com/repos/"+GITHUB_OWNER+"/"+GITHUB_REPO+"/contents/"+GITHUB_STATE_PATH,REMOTE_STATE_URL="data/state.json",CURRENT_DATE=todayPartsMap.year+"-"+todayPartsMap.month+"-"+todayPartsMap.day,selectedSubject="english",activeView="today",toastTimer=null,lastRemoteSync=null,cloudSaveTimer=null,cloudSaving=false,applyingRemote=false;
     var SUBJECTS=[
       {id:"english",name:"English Advanced",short:"English",accent:"#b8a8e8",target:"One paragraph or introduction"},
       {id:"business",name:"Business Studies",short:"Business",accent:"#e8b976",target:"Next HSC section"},
@@ -320,7 +331,19 @@
       try{var saved=JSON.parse(localStorage.getItem(LOCAL_KEY)||"null");if(saved){base=Object.assign(base,saved);base.completed=Object.assign({},seed.completed,saved.completed||{});base.chains=Object.assign({},saved.chains||{});base.partial=Object.assign({},saved.partial||{});base.minutesByDate=Object.assign({},saved.minutesByDate||{});base.updateLog=(saved.updateLog||seed.updateLog).slice()}}catch(error){}
       base.workDate=CURRENT_DATE;return base
     }
-    function saveState(){try{localStorage.setItem(LOCAL_KEY,JSON.stringify(state))}catch(error){}}
+    function githubToken(){try{return localStorage.getItem(TOKEN_KEY)||""}catch(error){return ""}}
+    function saveState(){try{localStorage.setItem(LOCAL_KEY,JSON.stringify(state))}catch(error){}if(!applyingRemote&&githubToken())scheduleCloudSave()}
+    function scheduleCloudSave(){clearTimeout(cloudSaveTimer);cloudSaveTimer=setTimeout(pushCloudState,900);setSyncLabel("Saving…",false)}
+    function setSyncLabel(label,offline){var dot=document.getElementById("sync-dot");if(dot)dot.classList.toggle("offline",!!offline);var text=document.getElementById("side-sync");if(text)text.textContent=label}
+    function encodeBase64(text){var bytes=new TextEncoder().encode(text),binary="";bytes.forEach(function(byte){binary+=String.fromCharCode(byte)});return btoa(binary)}
+    function decodeBase64(text){var binary=atob(String(text||"").replace(/\n/g,"")),bytes=new Uint8Array(binary.length);for(var i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);return new TextDecoder().decode(bytes)}
+    function githubHeaders(withAuth){var headers={Accept:"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"};if(withAuth&&githubToken())headers.Authorization="Bearer "+githubToken();return headers}
+    function getCloudFile(withAuth){return fetch(GITHUB_API+"?ref="+encodeURIComponent(GITHUB_BRANCH)+"&t="+Date.now(),{cache:"no-store",headers:githubHeaders(withAuth)}).then(function(response){if(!response.ok)throw new Error("Cloud state unavailable ("+response.status+")");return response.json()})}
+    function replaceWithRemote(remote){if(!remote||!remote.completed)return;applyingRemote=true;state.completed=Object.assign({},remote.completed||{});state.chains=Object.assign({},remote.chains||{});state.partial=Object.assign({},remote.partial||{});state.minutesByDate=Object.assign({},remote.minutesByDate||{});state.updateLog=(remote.updateLog||[]).slice();state.remoteRevision=Number(remote.revision||remote.remoteRevision||1);state.workDate=CURRENT_DATE;try{localStorage.setItem(LOCAL_KEY,JSON.stringify(state))}catch(error){}applyingRemote=false;lastRemoteSync=new Date();renderAll()}
+    function pushCloudState(){if(cloudSaving||!githubToken())return;cloudSaving=true;setSyncLabel("Saving…",false);getCloudFile(true).then(function(file){var payload=JSON.parse(decodeBase64(file.content)),nextRevision=Math.max(Number(payload.revision||1),Number(state.remoteRevision||1))+1,upload=JSON.parse(JSON.stringify(state));upload.revision=nextRevision;upload.remoteRevision=nextRevision;upload.workDate=CURRENT_DATE;return fetch(GITHUB_API,{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},githubHeaders(true)),body:JSON.stringify({message:"Update HSC Lock-In progress",content:encodeBase64(JSON.stringify(upload,null,2)+"\n"),sha:file.sha,branch:GITHUB_BRANCH})}).then(function(response){if(!response.ok)return response.json().then(function(body){throw new Error(body.message||"GitHub save failed")});return response.json()}).then(function(){state.remoteRevision=nextRevision;try{localStorage.setItem(LOCAL_KEY,JSON.stringify(state))}catch(error){}lastRemoteSync=new Date();setSyncLabel("Live · saved "+lastRemoteSync.toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}),false);notify("Progress saved live")})}).catch(function(error){setSyncLabel("Save failed · local backup safe",true);notify(error.message||"Live save failed")}).finally(function(){cloudSaving=false})}
+    function openSyncSetup(){document.getElementById("sync-token").value="";document.getElementById("sync-modal").hidden=false;setTimeout(function(){document.getElementById("sync-token").focus()},30)}
+    function closeSyncSetup(){document.getElementById("sync-modal").hidden=true}
+    function connectSync(){var token=document.getElementById("sync-token").value.trim();if(!token){notify("Paste the GitHub token first");return}try{localStorage.setItem(TOKEN_KEY,token)}catch(error){notify("Could not save token in this browser");return}setSyncLabel("Connecting…",false);getCloudFile(true).then(function(){closeSyncSetup();pushCloudState()}).catch(function(){try{localStorage.removeItem(TOKEN_KEY)}catch(ignore){}setSyncLabel("Connection failed",true);notify("Token rejected — check repository access")})}
     function allTasks(){return SUBJECTS.reduce(function(all,subject){return all.concat(TASKS[subject.id])},[])}
     function taskById(id){return allTasks().find(function(task){return task.id===id})}
     function isDone(id){return Boolean(state.completed[id])}
@@ -345,7 +368,7 @@
     function currentPhase(){return (state.workDate||CURRENT_DATE)<="2026-09-25"?1:2}
     function renderAll(){renderToday();renderCountdowns();renderCompletion();renderSubjects();renderSchedule();renderPhases();renderUpdates();renderNavigation();renderViewState()}
     function renderViewState(){document.querySelectorAll(".view").forEach(function(view){view.classList.toggle("active",view.id==="view-"+activeView)});document.querySelectorAll(".nav-button").forEach(function(button){button.classList.toggle("active",button.getAttribute("data-view")===activeView)});var names={today:"Today",phases:"Phases",completion:"Total completion",subjects:"Subjects","study-bank":"Study bank",schedule:"Schedule",updates:"Updates"};document.getElementById("top-title").textContent=names[activeView]||"Today"}
-    function renderNavigation(){var all=allTasks(),done=completeCount(all);document.getElementById("nav-today").textContent=state.workDate===CURRENT_DATE?"now":formatShortDate(state.workDate);document.getElementById("nav-completion").textContent=done+"/"+all.length;document.getElementById("nav-updates").textContent=String(state.updateLog.length);document.getElementById("side-sync").textContent=lastRemoteSync?"Synced "+lastRemoteSync.toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}):"Local state ready"}
+    function renderNavigation(){var all=allTasks(),done=completeCount(all);document.getElementById("nav-today").textContent=state.workDate===CURRENT_DATE?"now":formatShortDate(state.workDate);document.getElementById("nav-completion").textContent=done+"/"+all.length;document.getElementById("nav-updates").textContent=String(state.updateLog.length);if(lastRemoteSync)document.getElementById("side-sync").textContent=(githubToken()?"Live · ":"Synced ")+lastRemoteSync.toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});else document.getElementById("side-sync").textContent=githubToken()?"Live sync connected":"Cloud read · setup needed"}
 function phasePlanForDate(date){return PHASE_PLAN.find(function(day){return day.date===date})||PHASE_PLAN.find(function(day){return day.date===CURRENT_DATE})||PHASE_PLAN[PHASE_PLAN.length-1]}
     function formatStudyMinutes(minutes){var value=Number(minutes||0);if(value%60===0)return value/60+"h";return Math.floor(value/60)+"h "+value%60+"m"}
     function renderToday(){
@@ -400,7 +423,7 @@ function renderSchedule(){
     function renderUpdates(){
       var feed=document.getElementById("feed");
       feed.innerHTML=state.updateLog.length?state.updateLog.map(function(item){
-        return '<article class="feed-item"><div class="feed-top"><span>'+esc(new Date(item.at).toLocaleString("en-AU",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}))+'</span><span>'+esc(item.source||"device")+'</span></div><p>'+esc(item.text)+'</p><small>State saved locally; remote sync checks the canonical GitHub file.</small></article>'
+        return '<article class="feed-item"><div class="feed-top"><span>'+esc(new Date(item.at).toLocaleString("en-AU",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}))+'</span><span>'+esc(item.source||"device")+'</span></div><p>'+esc(item.text)+'</p><small>'+(githubToken()?"Saved locally and synced live to GitHub.":"Cloud progress is readable; connect live sync to upload changes.")+'</small></article>'
       }).join(""):'<div class="empty">No updates yet.</div>'
     }
     function addLog(text,source){state.updateLog.unshift({at:new Date().toISOString(),text:text,source:source||"device"});state.updateLog=state.updateLog.slice(0,80)}
@@ -419,39 +442,12 @@ function renderSchedule(){
     }
     function notify(message){var box=document.getElementById("toast");box.textContent=message;box.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(function(){box.classList.remove("show")},2600)}
     function showView(view){activeView=view;renderViewState();window.scrollTo({top:0,behavior:"smooth"})}
-    function syncRemote(){
-      var dot=document.getElementById("sync-dot");
-      dot.classList.remove("offline");
-      document.getElementById("side-sync").textContent="Syncing…";
-      fetch(REMOTE_STATE_URL+"?t="+Date.now(),{cache:"no-store"}).then(function(response){
-        if(!response.ok)throw new Error("state unavailable");
-        return response.json()
-      }).then(function(remote){
-        if(remote&&remote.completed)Object.keys(remote.completed).forEach(function(id){state.completed[id]=remote.completed[id]});
-        if(remote&&remote.chains)Object.keys(remote.chains).forEach(function(id){state.chains[id]=remote.chains[id]});
-        if(remote&&remote.partial)Object.keys(remote.partial).forEach(function(id){state.partial[id]=remote.partial[id]});
-        if(remote&&remote.minutesByDate)Object.keys(remote.minutesByDate).forEach(function(date){state.minutesByDate[date]=remote.minutesByDate[date]});
-        if(remote&&remote.updateLog){
-          var existing={};
-          state.updateLog.forEach(function(item){existing[item.at+"|"+item.text]=true});
-          remote.updateLog.forEach(function(item){if(!existing[item.at+"|"+item.text])state.updateLog.push(item)});
-          state.updateLog.sort(function(a,b){return new Date(b.at)-new Date(a.at)})
-        }
-        state.remoteRevision=remote&&remote.revision?remote.revision:(state.remoteRevision||1);
-        state.workDate=CURRENT_DATE;
-        lastRemoteSync=new Date();
-        saveState();
-        renderAll()
-      }).catch(function(){
-        dot.classList.add("offline");
-        document.getElementById("side-sync").textContent="Offline · local state saved"
-      })
-    }
+    function syncRemote(){setSyncLabel("Syncing…",false);getCloudFile(!!githubToken()).then(function(file){var remote=JSON.parse(decodeBase64(file.content)),remoteRevision=Number(remote.revision||remote.remoteRevision||1),localRevision=Number(state.remoteRevision||0);if(remoteRevision>localRevision||!githubToken())replaceWithRemote(remote);else{lastRemoteSync=new Date();renderNavigation()}setSyncLabel((githubToken()?"Live · ":"Cloud · ")+"synced "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}),false)}).catch(function(){fetch(REMOTE_STATE_URL+"?t="+Date.now(),{cache:"no-store"}).then(function(response){if(!response.ok)throw new Error("state unavailable");return response.json()}).then(function(remote){if(!githubToken())replaceWithRemote(remote);setSyncLabel("Cloud fallback loaded",false)}).catch(function(){setSyncLabel("Offline · local backup safe",true)})})}
     document.addEventListener("click",function(event){
       var viewButton=event.target.closest("[data-view]");if(viewButton){showView(viewButton.getAttribute("data-view"));return}
       var targetButton=event.target.closest("[data-view-target]");if(targetButton){showView(targetButton.getAttribute("data-view-target"));return}
       var actionButton=event.target.closest("[data-action]");if(!actionButton)return;var action=actionButton.getAttribute("data-action");
-      if(action==="complete-task")toggleTask(actionButton.getAttribute("data-id"));if(action==="advance-chain")advanceChain(actionButton.getAttribute("data-id"));if(action==="log-maths")logMaths(45);if(action==="sync")syncRemote();if(action==="jump-today"){state.workDate=CURRENT_DATE;saveState();renderAll();showView("today")}if(action==="open-subject"){selectedSubject=actionButton.getAttribute("data-subject")||"english";renderSubjects();showView("subjects")}if(action==="select-subject"){selectedSubject=actionButton.getAttribute("data-subject")||"english";renderSubjects()}
+      if(action==="complete-task")toggleTask(actionButton.getAttribute("data-id"));if(action==="advance-chain")advanceChain(actionButton.getAttribute("data-id"));if(action==="log-maths")logMaths(45);if(action==="sync"){if(githubToken())syncRemote();else openSyncSetup()}if(action==="close-sync")closeSyncSetup();if(action==="connect-sync")connectSync();if(action==="jump-today"){state.workDate=CURRENT_DATE;saveState();renderAll();showView("today")}if(action==="open-subject"){selectedSubject=actionButton.getAttribute("data-subject")||"english";renderSubjects();showView("subjects")}if(action==="select-subject"){selectedSubject=actionButton.getAttribute("data-subject")||"english";renderSubjects()}
     });
     document.getElementById("quick-form").addEventListener("submit",function(event){event.preventDefault();var input=document.getElementById("quick-input"),text=input.value.trim();if(!text){notify("Write an update first");return}parseUpdate(text);input.value=""});
     renderAll();syncRemote();setInterval(syncRemote,60000);
