@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 7,
+  "revision": 8,
   "workDate": "2026-09-25",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -15,12 +15,18 @@
     "english:modb-hollow-men": "2026-09-23",
     "english:modb-journey-magi": "2026-09-23",
     "english:modb-conclusion": "2026-09-23",
-    "economics:environment": "2026-09-24"
+    "economics:environment": "2026-09-24",
+    "business:hr-processes": "2026-09-26"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "updateLog": [
+    {
+      "at": "2026-09-26T10:10:17.353Z",
+      "text": "Completed Human Resources — Processes.",
+      "source": "device"
+    },
     {
       "at": "2026-09-25T13:48:30.388Z",
       "text": "Reopened Rhapsody on a Windy Night.",
@@ -177,5 +183,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 7
+  "remoteRevision": 8
 }
