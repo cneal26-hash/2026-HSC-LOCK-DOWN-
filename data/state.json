@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 13,
+  "revision": 14,
   "workDate": "2026-10-01",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -20,13 +20,55 @@
     "business:hr-strategies": "2026-09-27",
     "english:modb-preludes": "2026-10-01",
     "economics:monetary": "2026-10-01",
-    "economics:inflation": "2026-10-01"
+    "economics:inflation": "2026-10-01",
+    "maths:chapter-1": "2026-10-01",
+    "maths:chapter-2": "2026-10-01",
+    "maths:chapter-3": "2026-10-01",
+    "maths:chapter-4": "2026-10-01",
+    "maths:chapter-5": "2026-10-01",
+    "maths:chapter-6": "2026-10-01",
+    "maths:chapter-7": "2026-10-01"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-01T13:36:50.769Z",
+      "text": "Completed Chapter 7.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-01T13:36:50.317Z",
+      "text": "Completed Chapter 6.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-01T13:36:49.868Z",
+      "text": "Completed Chapter 5.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-01T13:36:49.418Z",
+      "text": "Completed Chapter 4.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-01T13:36:49.001Z",
+      "text": "Completed Chapter 3.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-01T13:36:48.584Z",
+      "text": "Completed Chapter 2.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-01T13:36:48.116Z",
+      "text": "Completed Chapter 1.",
+      "source": "device"
+    },
     {
       "at": "2026-10-01T09:48:52.747Z",
       "text": "Completed Inflation.",
@@ -218,5 +260,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 13
+  "remoteRevision": 14
 }
