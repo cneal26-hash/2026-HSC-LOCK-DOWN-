@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 12,
+  "revision": 13,
   "workDate": "2026-10-01",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -19,13 +19,19 @@
     "business:hr-processes": "2026-09-26",
     "business:hr-strategies": "2026-09-27",
     "english:modb-preludes": "2026-10-01",
-    "economics:monetary": "2026-10-01"
+    "economics:monetary": "2026-10-01",
+    "economics:inflation": "2026-10-01"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-01T09:48:52.747Z",
+      "text": "Completed Inflation.",
+      "source": "device"
+    },
     {
       "at": "2026-10-01T09:48:50.529Z",
       "text": "Completed Monetary.",
@@ -212,5 +218,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 12
+  "remoteRevision": 13
 }
