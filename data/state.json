@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 11,
+  "revision": 12,
   "workDate": "2026-10-01",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -19,13 +19,23 @@
     "business:hr-processes": "2026-09-26",
     "business:hr-strategies": "2026-09-27",
     "english:modb-preludes": "2026-10-01",
-    "economics:micro": "2026-10-01"
+    "economics:monetary": "2026-10-01"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-01T09:48:50.529Z",
+      "text": "Completed Monetary.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-01T09:48:49.146Z",
+      "text": "Reopened Micro.",
+      "source": "device"
+    },
     {
       "at": "2026-10-01T09:48:47.129Z",
       "text": "Completed Micro.",
@@ -202,5 +212,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 11
+  "remoteRevision": 12
 }
