@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 17,
+  "revision": 18,
   "workDate": "2026-10-05",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -33,13 +33,31 @@
     "english:moda-authority": "2026-10-05",
     "english:moda-catharsis": "2026-10-05",
     "business:finance-role": "2026-10-05",
-    "business:finance-influences": "2026-10-05"
+    "business:finance-influences": "2026-10-05",
+    "economics:fiscal": "2026-10-05",
+    "economics:macro": "2026-10-05",
+    "economics:micro": "2026-10-05"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-05T06:30:04.991Z",
+      "text": "Completed Micro.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-05T06:30:04.407Z",
+      "text": "Completed Macro.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-05T06:30:03.906Z",
+      "text": "Completed Fiscal.",
+      "source": "device"
+    },
     {
       "at": "2026-10-05T06:29:58.382Z",
       "text": "Completed Finance — Influences.",
@@ -296,5 +314,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 17
+  "remoteRevision": 18
 }
