@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "revision": 14,
-  "workDate": "2026-10-01",
+  "revision": 15,
+  "workDate": "2026-10-05",
   "completed": {
     "english:common-intro": "2026-09-08",
     "english:common-bp1": "2026-09-09",
@@ -27,13 +27,19 @@
     "maths:chapter-4": "2026-10-01",
     "maths:chapter-5": "2026-10-01",
     "maths:chapter-6": "2026-10-01",
-    "maths:chapter-7": "2026-10-01"
+    "maths:chapter-7": "2026-10-01",
+    "english:modb-rhapsody": "2026-10-05"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-05T06:29:47.191Z",
+      "text": "Completed Rhapsody on a Windy Night.",
+      "source": "device"
+    },
     {
       "at": "2026-10-01T13:36:50.769Z",
       "text": "Completed Chapter 7.",
@@ -260,5 +266,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 14
+  "remoteRevision": 15
 }
