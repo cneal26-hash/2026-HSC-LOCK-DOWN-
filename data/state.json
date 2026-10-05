@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 15,
+  "revision": 16,
   "workDate": "2026-10-05",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -28,13 +28,31 @@
     "maths:chapter-5": "2026-10-01",
     "maths:chapter-6": "2026-10-01",
     "maths:chapter-7": "2026-10-01",
-    "english:modb-rhapsody": "2026-10-05"
+    "english:modb-rhapsody": "2026-10-05",
+    "english:moda-intro": "2026-10-05",
+    "english:moda-authority": "2026-10-05",
+    "english:moda-catharsis": "2026-10-05"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-05T06:29:50.591Z",
+      "text": "Completed Module A — Catharsis.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-05T06:29:49.790Z",
+      "text": "Completed Module A — Authority.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-05T06:29:48.739Z",
+      "text": "Completed Module A — Introduction.",
+      "source": "device"
+    },
     {
       "at": "2026-10-05T06:29:47.191Z",
       "text": "Completed Rhapsody on a Windy Night.",
@@ -266,5 +284,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 15
+  "remoteRevision": 16
 }
