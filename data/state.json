@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "revision": 19,
-  "workDate": "2026-10-05",
+  "revision": 20,
+  "workDate": "2026-10-06",
   "completed": {
     "english:common-intro": "2026-09-08",
     "english:common-bp1": "2026-09-09",
@@ -37,13 +37,31 @@
     "economics:fiscal": "2026-10-05",
     "economics:macro": "2026-10-05",
     "economics:micro": "2026-10-05",
-    "economics:labour": "2026-10-05"
+    "economics:labour": "2026-10-05",
+    "maths:chapter-8": "2026-10-06",
+    "maths:chapter-9": "2026-10-06",
+    "maths:chapter-10": "2026-10-06"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-06T12:15:08.395Z",
+      "text": "Completed Chapter 10.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-06T12:15:07.864Z",
+      "text": "Completed Chapter 9.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-06T12:15:07.398Z",
+      "text": "Completed Chapter 8.",
+      "source": "device"
+    },
     {
       "at": "2026-10-05T06:30:07.708Z",
       "text": "Completed Labour.",
@@ -320,5 +338,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 19
+  "remoteRevision": 20
 }
