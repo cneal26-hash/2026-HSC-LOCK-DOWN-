@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 21,
+  "revision": 22,
   "workDate": "2026-10-06",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -39,13 +39,19 @@
     "economics:micro": "2026-10-05",
     "maths:chapter-8": "2026-10-06",
     "maths:chapter-9": "2026-10-06",
-    "maths:chapter-10": "2026-10-06"
+    "maths:chapter-10": "2026-10-06",
+    "business:finance-processes": "2026-10-06"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-06T12:16:33.062Z",
+      "text": "Completed Finance — Processes.",
+      "source": "device"
+    },
     {
       "at": "2026-10-06T12:16:25.845Z",
       "text": "Reopened Labour.",
@@ -342,5 +348,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 21
+  "remoteRevision": 22
 }
