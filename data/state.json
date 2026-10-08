@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "revision": 22,
-  "workDate": "2026-10-06",
+  "revision": 23,
+  "workDate": "2026-10-09",
   "completed": {
     "english:common-intro": "2026-09-08",
     "english:common-bp1": "2026-09-09",
@@ -40,13 +40,19 @@
     "maths:chapter-8": "2026-10-06",
     "maths:chapter-9": "2026-10-06",
     "maths:chapter-10": "2026-10-06",
-    "business:finance-processes": "2026-10-06"
+    "business:finance-processes": "2026-10-06",
+    "english:moda-colonial": "2026-10-08"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-08T13:48:37.462Z",
+      "text": "Completed Module A — Colonial marginalisation.",
+      "source": "device"
+    },
     {
       "at": "2026-10-06T12:16:33.062Z",
       "text": "Completed Finance — Processes.",
@@ -348,5 +354,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 22
+  "remoteRevision": 23
 }
