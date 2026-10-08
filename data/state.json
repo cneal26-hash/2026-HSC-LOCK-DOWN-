@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 24,
+  "revision": 25,
   "workDate": "2026-10-09",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -42,13 +42,25 @@
     "maths:chapter-10": "2026-10-06",
     "business:finance-processes": "2026-10-06",
     "english:moda-colonial": "2026-10-08",
-    "business:finance-strategies": "2026-10-08"
+    "business:finance-strategies": "2026-10-08",
+    "economics:exchange-rates": "2026-10-08",
+    "economics:trade-financial-flows": "2026-10-08"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-08T13:48:45.994Z",
+      "text": "Completed Trade and Financial Flows.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-08T13:48:45.508Z",
+      "text": "Completed Exchange rates.",
+      "source": "device"
+    },
     {
       "at": "2026-10-08T13:48:42.102Z",
       "text": "Completed Finance — Strategies.",
@@ -360,5 +372,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 24
+  "remoteRevision": 25
 }
