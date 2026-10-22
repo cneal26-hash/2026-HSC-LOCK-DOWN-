@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 31,
+  "revision": 32,
   "workDate": "2026-10-22",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -54,13 +54,29 @@
     "economics:io-trading-blocs-forums-fta": "2026-10-22",
     "economics:global-ftp-global": "2026-10-22",
     "economics:global-ftp-domestic": "2026-10-22",
-    "economics:domestic-ftp": "2026-10-22"
+    "drama:essay-libertine": "2026-10-22",
+    "drama:essay-disney": "2026-10-22"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-22T12:25:59.724Z",
+      "text": "Completed Written essay 2 — Disney sequel satire.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-22T12:25:59.158Z",
+      "text": "Completed Written essay 1 — The Libertine.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-22T12:25:53.590Z",
+      "text": "Reopened Domestic FTP.",
+      "source": "device"
+    },
     {
       "at": "2026-10-22T12:25:51.391Z",
       "text": "Completed Domestic FTP.",
@@ -442,5 +458,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 31
+  "remoteRevision": 32
 }
