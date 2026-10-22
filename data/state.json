@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "revision": 26,
-  "workDate": "2026-10-09",
+  "revision": 27,
+  "workDate": "2026-10-22",
   "completed": {
     "english:common-intro": "2026-09-08",
     "english:common-bp1": "2026-09-09",
@@ -44,13 +44,31 @@
     "english:moda-colonial": "2026-10-08",
     "business:finance-strategies": "2026-10-08",
     "economics:exchange-rates": "2026-10-08",
-    "economics:trade-financial-flows": "2026-10-08"
+    "economics:trade-financial-flows": "2026-10-08",
+    "english:modc-holding": "2026-10-22",
+    "english:modc-discursive-frame": "2026-10-22",
+    "english:modc-discursive-blue-dot": "2026-10-22"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-22T12:25:30.755Z",
+      "text": "Completed Module C — The Blue Dot.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-22T12:25:30.192Z",
+      "text": "Completed Module C — Outside the Frame.",
+      "source": "device"
+    },
+    {
+      "at": "2026-10-22T12:25:29.589Z",
+      "text": "Completed Module C — Holding.",
+      "source": "device"
+    },
     {
       "at": "2026-10-08T13:48:51.277Z",
       "text": "Reopened Labour.",
@@ -382,5 +400,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 26
+  "remoteRevision": 27
 }
