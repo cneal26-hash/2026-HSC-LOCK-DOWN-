@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 29,
+  "revision": 30,
   "workDate": "2026-10-22",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -51,13 +51,19 @@
     "business:marketing-role": "2026-10-22",
     "business:marketing-influences": "2026-10-22",
     "business:marketing-processes": "2026-10-22",
-    "economics:io-trading-blocs-forums-fta": "2026-10-22"
+    "economics:io-trading-blocs-forums-fta": "2026-10-22",
+    "economics:global-ftp-global": "2026-10-22"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-22T12:25:45.992Z",
+      "text": "Completed Global FTP > Global.",
+      "source": "device"
+    },
     {
       "at": "2026-10-22T12:25:41.158Z",
       "text": "Completed IO, Trading Blocs, Forums, FTA.",
@@ -424,5 +430,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 29
+  "remoteRevision": 30
 }
