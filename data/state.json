@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 28,
+  "revision": 29,
   "workDate": "2026-10-22",
   "completed": {
     "english:common-intro": "2026-09-08",
@@ -50,13 +50,19 @@
     "english:modc-discursive-blue-dot": "2026-10-22",
     "business:marketing-role": "2026-10-22",
     "business:marketing-influences": "2026-10-22",
-    "business:marketing-processes": "2026-10-22"
+    "business:marketing-processes": "2026-10-22",
+    "economics:io-trading-blocs-forums-fta": "2026-10-22"
   },
   "chains": {},
   "partial": {},
   "minutesByDate": {},
   "writingPractice": {},
   "updateLog": [
+    {
+      "at": "2026-10-22T12:25:41.158Z",
+      "text": "Completed IO, Trading Blocs, Forums, FTA.",
+      "source": "device"
+    },
     {
       "at": "2026-10-22T12:25:36.724Z",
       "text": "Completed Marketing — Processes.",
@@ -418,5 +424,5 @@
       "source": "seed"
     }
   ],
-  "remoteRevision": 28
+  "remoteRevision": 29
 }
